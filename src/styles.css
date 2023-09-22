@@ -11,8 +11,14 @@ body {
 }
 
 .accordion {
-  width: 700px;
-  margin: 100px auto;
+  @media (min-width: 750px) {
+    width: 700px;
+    margin: 100px auto;
+  }
+  @media (max-width: 750px) {
+    width: 350px;
+    margin: 20px auto;
+  }
   display: flex;
   flex-direction: column;
   gap: 24px;
